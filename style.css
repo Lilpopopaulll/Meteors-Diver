@@ -1,0 +1,74 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    /* Éviter le défilement global */
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 100;
+    /* Assurez-vous que la barre de menu est au-dessus du canvas */
+}
+
+.titre {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 2.5rem;
+    color: #00FF00;
+    /* Couleur verte rétro */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    z-index: 100;
+    /* Assurez-vous que les boutons sont au-dessus du canvas */
+}
+
+button {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1rem;
+    color: black;
+    background-color: #00FF00;
+    /* Couleur verte rétro */
+    border: 2px solid hsl(120, 100%, 50%);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+    /* Espacement entre les boutons */
+    width: 200px;
+    /* Largeur fixe pour uniformité */
+}
+
+button:hover {
+    background-color: black;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+}
+
+#playground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.navbar {
+    position: fixed;
+    /* La barre de navigation reste fixe en haut de la page */
+    top: 0;
+    width: 100%;
+    /* La barre prend toute la largeur de la page */
+    background-color: rgba(255, 255, 255, 0.043);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', sans-serif;
+
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+    font: "Open sans", sans-serif;
+    display: inline-block;
+}
+
+.affichageScore {
+    text-decoration: none;
+    /* Pour enlever le soulignement du lien */
+}
+
+#score,
+#vies {
+    display: inline;
+    /* ou inline-block */
+}
+
+
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Changement de couleur de fond au survol */
+    border-radius: 4px;
+    /* Bordures arrondies pour les liens au survol */
+}
